@@ -1805,7 +1805,7 @@ ui:
     plugins: Plugins
     installed_plugins: Installed Plugins
     apperance: Appearance
-  website_welcome: Welcome to {{site_name}}
+  website_welcome: Welcome to {{site_name}} - Apache Local Community Taipei
   user_center:
     login: Login
     qrcode_login_tip: Please use {{ agentName }} to scan the QR code and log in.
@@ -1822,6 +1822,11 @@ ui:
     ×_awarded: "{{ number }} awarded"
     can_earn_multiple: You can earn this multiple times.
     earned: Earned
+  theme:
+    apache_theme: Apache Community Theme
+    orange_coffee: Orange & Coffee Design
+    warm_colors: Warm Community Colors
+    taipei_community: Taipei Local Community
 
   admin:
     admin_header:

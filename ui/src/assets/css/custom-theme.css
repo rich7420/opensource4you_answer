@@ -1,0 +1,126 @@
+/*
+ * Custom Orange & Coffee Theme for Answer
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+/* Custom Orange & Coffee Theme Styles */
+
+/* Primary Button Styling */
+.btn-primary {
+  background-color: var(--an-primary-orange, #ff8c00) !important;
+  border-color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--an-primary-orange-dark, #e67e00) !important;
+  border-color: var(--an-primary-orange-dark, #e67e00) !important;
+}
+
+/* Link Colors */
+a {
+  color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+a:hover {
+  color: var(--an-primary-orange-dark, #e67e00) !important;
+}
+
+/* Navigation Active States */
+.nav-link.active {
+  color: var(--an-coffee-dark, #654321) !important;
+  background-color: var(--an-warm-bg, #fdf5e6) !important;
+}
+
+/* Badge Styling */
+.badge.bg-primary {
+  background-color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+/* Form Controls */
+.form-control:focus {
+  border-color: var(--an-primary-orange, #ff8c00) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25) !important;
+}
+
+/* Custom Icon Styling */
+.bi-trophy-fill {
+  color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+.bi-graph-up {
+  color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+.bi-brush-fill {
+  color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+/* Success Messages */
+.alert-success {
+  background-color: var(--an-warm-bg, #fdf5e6) !important;
+  border-color: var(--an-warm-border, #deb887) !important;
+  color: var(--an-coffee-dark, #654321) !important;
+}
+
+/* Custom Card Styling */
+.card-header {
+  background-color: rgba(255, 140, 0, 0.1) !important;
+  border-bottom: 1px solid var(--an-warm-border, #deb887) !important;
+}
+
+/* Progress Bars */
+.progress-bar {
+  background-color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--an-primary-orange, #ff8c00) !important;
+}
+
+/* Apache Community Branding */
+.apache-community-badge {
+  background: linear-gradient(135deg, #ff8c00, #ffa500);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.3);
+}
+
+/* Dark Theme Adjustments */
+[data-bs-theme='dark'] {
+  --an-primary-orange: #ffa500;
+  --an-primary-orange-light: #ffb84d;
+  --an-primary-orange-dark: #ff8c00;
+  --an-coffee-light: #8b7355;
+  --an-coffee-medium: #a0522d;
+  --an-coffee-dark: #8b4513;
+  --an-warm-bg: #2d1810;
+  --an-warm-border: #8b4513;
+}
+
+[data-bs-theme='dark'] .card-header {
+  background-color: rgba(255, 165, 0, 0.1) !important;
+  border-bottom: 1px solid var(--an-warm-border, #8b4513) !important;
+}

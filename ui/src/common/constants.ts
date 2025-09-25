@@ -86,25 +86,25 @@ export const ADMIN_LIST_STATUS = {
 export const ADMIN_NAV_MENUS = [
   {
     name: 'dashboard',
-    icon: 'speedometer',
+    icon: 'apache-badge',
     children: [],
   },
   {
     name: 'contents',
-    icon: 'file-earmark-text-fill',
+    icon: 'file-text-fill',
     children: [{ name: 'questions' }, { name: 'answers' }],
   },
   {
     name: 'users',
-    icon: 'people-fill',
+    icon: 'person-circle',
   },
   {
     name: 'badges',
-    icon: 'award-fill',
+    icon: 'trophy-fill',
   },
   {
     name: 'apperance',
-    icon: 'palette-fill',
+    icon: 'brush-fill',
     children: [
       {
         name: 'themes',
@@ -117,7 +117,7 @@ export const ADMIN_NAV_MENUS = [
   },
   {
     name: 'settings',
-    icon: 'gear-fill',
+    icon: 'sliders',
     children: [
       { name: 'general' },
       { name: 'interface' },
@@ -131,7 +131,7 @@ export const ADMIN_NAV_MENUS = [
   },
   {
     name: 'plugins',
-    icon: 'plugin',
+    icon: 'puzzle-fill',
     children: [
       {
         name: 'installed_plugins',
@@ -658,7 +658,7 @@ export const SYSTEM_AVATAR_OPTIONS = [
 
 export const TAG_SLUG_NAME_MAX_LENGTH = 35;
 
-export const DEFAULT_THEME_COLOR = '#0033ff';
+export const DEFAULT_THEME_COLOR = '#ff8c00';
 
 export const SUSPENSE_USER_TIME = [
   {

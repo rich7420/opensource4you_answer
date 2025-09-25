@@ -28,6 +28,8 @@ import TagSelector from './TagSelector';
 import Unactivate from './Unactivate';
 import UploadImg from './UploadImg';
 import Actions from './Actions';
+import ApacheBadge from './ApacheBadge';
+import ApacheBadgeSVG from './ApacheBadge/ApacheBadgeSVG';
 import Tag from './Tag';
 import Operate from './Operate';
 import UserCard from './UserCard';
@@ -115,5 +117,7 @@ export {
   PinList,
   MobileSideNav,
   AdminSideNav,
+  ApacheBadge,
+  ApacheBadgeSVG,
 };
 export type { EditorRef, JSONSchema, UISchema };

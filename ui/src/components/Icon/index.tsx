@@ -38,6 +38,29 @@ const Icon: FC<IProps> = ({
   onClick,
   title,
 }) => {
+  // Handle Apache badge icon specially
+  if (name === 'apache-badge') {
+    return (
+      <div
+        className={classNames('apache-community-badge', className)}
+        style={{ 
+          ...(size && { 
+            width: size, 
+            height: size,
+            fontSize: `${Math.max(8, parseInt(size.toString()) * 0.3)}px`
+          }) 
+        }}
+        onClick={onClick}
+        onKeyDown={onClick}
+        title={title || "Apache Local Community Taipei"}
+        role="button"
+        tabIndex={0}
+      >
+        <div className="fw-bold">源</div>
+      </div>
+    );
+  }
+
   return (
     <i
       className={classNames(type, `bi-${name}`, className)}

@@ -15,15 +15,40 @@
 # specific language governing permissions and limitations
 # under the License.
 
-version: "3"
 services:
   answer:
-    image: apache/answer
+    image: apache/answer:latest
     ports:
-      - '9080:80'
-    restart: on-failure
+      - "127.0.0.1:9080:80"
+    depends_on:
+      - db
+      - redis
+    environment:
+      - DB_TYPE=postgres
+      - DB_USERNAME=answer
+      - DB_PASSWORD=change_me
+      - DB_HOST=db:5432
+      - DB_NAME=answer
+      - REDIS_ADDR=redis:6379
     volumes:
-      - answer-data:/data
-
+      - answer_data:/data
+    restart: unless-stopped
+  db:
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=answer
+      - POSTGRES_PASSWORD=change_me
+      - POSTGRES_DB=answer
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+  redis:
+    image: redis:7
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
 volumes:
-  answer-data:
+  answer_data:
+  db_data:
+  redis_data:
