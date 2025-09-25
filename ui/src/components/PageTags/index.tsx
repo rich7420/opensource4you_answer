@@ -82,11 +82,25 @@ const Index: FC = () => {
     <Helmet>
       <link
         rel="icon"
-        type="image/png"
-        href={favicon || square_icon || `${REACT_BASE_PATH}/favicon.ico`}
+        type="image/svg+xml"
+        href={favicon || square_icon || `${REACT_BASE_PATH}/favicon.svg`}
       />
-      <link rel="icon" type="image/png" sizes="192x192" href={square_icon} />
-      <link rel="apple-touch-icon" type="image/png" href={square_icon} />
+      <link
+        rel="icon"
+        type="image/png"
+        href={favicon || square_icon || `${REACT_BASE_PATH}/favicon-32x32.png`}
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href={square_icon || `${REACT_BASE_PATH}/favicon-32x32.png`}
+      />
+      <link
+        rel="apple-touch-icon"
+        type="image/png"
+        href={square_icon || `${REACT_BASE_PATH}/favicon-32x32.png`}
+      />
       <title>{pageTitle}</title>
       {keywords && <meta name="keywords" content={keywords} />}
       {description && <meta name="description" content={description} />}
@@ -105,14 +119,14 @@ const Index: FC = () => {
       <meta
         property="og:image"
         itemProp="image primaryImageOfPage"
-        content={square_icon || favicon || '/favicon.ico'}
+        content={square_icon || favicon || '/favicon-32x32.png'}
       />
       <meta name="twitter:card" content={twitterType} />
       <meta name="twitter:domain" content={hostname} />
       {description && <meta name="twitter:description" content={description} />}
       <meta
         name="twitter:image"
-        content={square_icon || favicon || '/favicon.ico'}
+        content={square_icon || favicon || '/favicon-32x32.png'}
       />
       {/* Social media meta share tags end here */}
     </Helmet>

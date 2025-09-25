@@ -29,9 +29,9 @@ interface IType {
 const brandingSetting = create<IType>((set) => ({
   branding: {
     logo: '',
-    square_icon: '',
+    square_icon: '/favicon-32x32.png',
     mobile_logo: '',
-    favicon: '',
+    favicon: '/favicon.ico',
   },
   update: (params) =>
     set(() => {

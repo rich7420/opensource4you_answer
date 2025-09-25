@@ -24,11 +24,29 @@
 .btn-primary {
   background-color: var(--an-primary-orange, #ff8c00) !important;
   border-color: var(--an-primary-orange, #ff8c00) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
 .btn-primary:hover {
   background-color: var(--an-primary-orange-dark, #e67e00) !important;
   border-color: var(--an-primary-orange-dark, #e67e00) !important;
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+}
+
+.btn-primary:focus {
+  background-color: var(--an-primary-orange-dark, #e67e00) !important;
+  border-color: var(--an-primary-orange-dark, #e67e00) !important;
+  color: white !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.5) !important;
+}
+
+.btn-primary:active {
+  background-color: var(--an-primary-orange-dark, #e67e00) !important;
+  border-color: var(--an-primary-orange-dark, #e67e00) !important;
+  color: white !important;
 }
 
 /* Link Colors */
@@ -44,6 +62,75 @@ a:hover {
 .nav-link.active {
   color: var(--an-coffee-dark, #654321) !important;
   background-color: var(--an-warm-bg, #fdf5e6) !important;
+}
+
+/* Sidebar Navigation Links */
+.nav-link {
+  color: var(--an-coffee-dark, #654321) !important;
+}
+
+.nav-link:hover {
+  color: var(--an-primary-orange-dark, #e67e00) !important;
+  background-color: rgba(255, 140, 0, 0.1) !important;
+}
+
+/* Sidebar Background */
+.sidebar,
+.nav-sidebar {
+  background-color: var(--an-warm-bg, #fdf5e6) !important;
+}
+
+/* Text Color Improvements */
+.text-muted {
+  color: var(--an-coffee-medium, #8b4513) !important;
+}
+
+.text-secondary {
+  color: var(--an-coffee-medium, #8b4513) !important;
+}
+
+/* Button Text Contrast */
+.btn-outline-primary {
+  color: var(--an-primary-orange, #ff8c00) !important;
+  border-color: var(--an-primary-orange, #ff8c00) !important;
+  font-weight: 600 !important;
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
+  background-color: var(--an-primary-orange, #ff8c00) !important;
+  border-color: var(--an-primary-orange, #ff8c00) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* All button text improvements */
+.btn {
+  font-weight: 600 !important;
+}
+
+.btn-success {
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btn-danger {
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btn-warning {
+  color: var(--an-coffee-dark, #654321) !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3) !important;
+}
+
+.btn-info {
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btn-secondary {
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* Badge Styling */
@@ -108,6 +195,157 @@ a:hover {
   box-shadow: 0 2px 8px rgba(255, 140, 0, 0.3);
 }
 
+/* Additional Text Contrast Fixes */
+.navbar-brand {
+  color: var(--an-coffee-dark, #654321) !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3) !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 8px 16px !important;
+  margin: 0 4px !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+  background-color: transparent !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7) !important;
+  transform: translateY(-1px) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: white !important;
+  background-color: transparent !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+
+/* Header/Navbar specific fixes */
+.navbar {
+  background-color: var(--an-primary-orange, #ff8c00) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: white !important;
+  background-color: transparent !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Search bar in header */
+.navbar .form-control {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: var(--an-coffee-dark, #654321) !important;
+  font-weight: 500 !important;
+}
+
+.navbar .form-control:focus {
+  background-color: white !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: var(--an-coffee-dark, #654321) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+
+.navbar .form-control::placeholder {
+  color: var(--an-coffee-medium, #8b4513) !important;
+  font-weight: 500 !important;
+}
+
+/* Header buttons and links */
+.navbar .btn {
+  color: white !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar .btn:hover {
+  color: white !important;
+  background-color: transparent !important;
+  border: none !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Any text in navbar */
+.navbar * {
+  color: white !important;
+}
+
+.navbar .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar .text-secondary {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Sidebar specific fixes */
+.sidebar .nav-link {
+  color: var(--an-coffee-dark, #654321) !important;
+  font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+  color: var(--an-primary-orange-dark, #e67e00) !important;
+  background-color: rgba(255, 140, 0, 0.1) !important;
+}
+
+.sidebar .nav-link.active {
+  color: var(--an-coffee-dark, #654321) !important;
+  background-color: rgba(255, 140, 0, 0.2) !important;
+  font-weight: 600;
+}
+
+/* Card and content area fixes */
+.card {
+  border-color: var(--an-warm-border, #deb887) !important;
+}
+
+.card-header {
+  background-color: rgba(255, 140, 0, 0.05) !important;
+  border-bottom: 1px solid var(--an-warm-border, #deb887) !important;
+  color: var(--an-coffee-dark, #654321) !important;
+}
+
+/* Form elements */
+.form-control {
+  border-color: var(--an-warm-border, #deb887) !important;
+}
+
+.form-control:focus {
+  border-color: var(--an-primary-orange, #ff8c00) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25) !important;
+}
+
 /* Dark Theme Adjustments */
 [data-bs-theme='dark'] {
   --an-primary-orange: #ffa500;
@@ -123,4 +361,16 @@ a:hover {
 [data-bs-theme='dark'] .card-header {
   background-color: rgba(255, 165, 0, 0.1) !important;
   border-bottom: 1px solid var(--an-warm-border, #8b4513) !important;
+}
+
+[data-bs-theme='dark'] .sidebar {
+  background-color: var(--an-warm-bg, #2d1810) !important;
+}
+
+[data-bs-theme='dark'] .nav-link {
+  color: var(--an-coffee-light, #8b7355) !important;
+}
+
+[data-bs-theme='dark'] .nav-link:hover {
+  color: var(--an-primary-orange-light, #ffb84d) !important;
 }

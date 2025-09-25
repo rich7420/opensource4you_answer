@@ -25,10 +25,10 @@ interface IProps {
   showText?: boolean;
 }
 
-const ApacheBadge: FC<IProps> = ({ 
-  size = 40, 
-  className = '', 
-  showText = false 
+const ApacheBadge: FC<IProps> = ({
+  size = 40,
+  className = '',
+  showText = false,
 }) => {
   const badgeStyle = {
     width: `${size}px`,
@@ -37,11 +37,10 @@ const ApacheBadge: FC<IProps> = ({
   };
 
   return (
-    <div 
+    <div
       className={`apache-community-badge ${className}`}
       style={badgeStyle}
-      title="Apache Local Community Taipei"
-    >
+      title="Apache Local Community Taipei">
       {showText ? (
         <div className="text-center">
           <div className="fw-bold">源</div>

@@ -31,8 +31,7 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
       height={size}
       viewBox="0 0 100 100"
       className={className}
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       {/* Outer Circle with Gradient */}
       <defs>
         <radialGradient id="goldGradient" cx="50%" cy="30%" r="70%">
@@ -45,7 +44,7 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
           <stop offset="100%" stopColor="#654321" />
         </linearGradient>
       </defs>
-      
+
       {/* Main Circle */}
       <circle
         cx="50"
@@ -55,7 +54,7 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
         stroke="#8b4513"
         strokeWidth="2"
       />
-      
+
       {/* Inner Circle */}
       <circle
         cx="50"
@@ -65,7 +64,7 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
         stroke="#8b4513"
         strokeWidth="1"
       />
-      
+
       {/* Top Text: APACHE LOCAL COMMUNITY */}
       <text
         x="50"
@@ -74,11 +73,10 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
         fontSize="8"
         fill="url(#textGradient)"
         fontWeight="bold"
-        letterSpacing="0.5"
-      >
+        letterSpacing="0.5">
         APACHE LOCAL COMMUNITY
       </text>
-      
+
       {/* Bottom Text: TAIPEI */}
       <text
         x="50"
@@ -87,11 +85,10 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
         fontSize="10"
         fill="url(#textGradient)"
         fontWeight="bold"
-        letterSpacing="1"
-      >
+        letterSpacing="1">
         TAIPEI
       </text>
-      
+
       {/* Central Character: 源 */}
       <text
         x="50"
@@ -100,11 +97,10 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
         fontSize="24"
         fill="url(#textGradient)"
         fontWeight="bold"
-        fontFamily="serif"
-      >
+        fontFamily="serif">
         源
       </text>
-      
+
       {/* Decorative Elements - Cloud-like shapes around the character */}
       <ellipse
         cx="35"
@@ -122,7 +118,7 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
         fill="rgba(139, 69, 19, 0.3)"
         transform="rotate(15 65 45)"
       />
-      
+
       {/* Glasses representation */}
       <circle
         cx="42"
@@ -148,7 +144,7 @@ const ApacheBadgeSVG: FC<IProps> = ({ size = 40, className = '' }) => {
         stroke="url(#textGradient)"
         strokeWidth="1"
       />
-      
+
       {/* Smile */}
       <path
         d="M 40 60 Q 50 65 60 60"

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Favicon</title>
+</head>
+<body>
+    <h1>Apache Badge Favicon Generator</h1>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <br><br>
+    <button onclick="downloadFavicon()">Download as ICO</button>
+    <button onclick="downloadPNG()">Download as PNG</button>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Draw Apache badge
+        function drawBadge() {
+            // Clear canvas
+            ctx.clearRect(0, 0, 32, 32);
+            
+            // Draw circle background
+            ctx.beginPath();
+            ctx.arc(16, 16, 15, 0, 2 * Math.PI);
+            ctx.fillStyle = '#ff8c00';
+            ctx.fill();
+            ctx.strokeStyle = '#8b4513';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            
+            // Draw "源" character
+            ctx.fillStyle = '#654321';
+            ctx.font = 'bold 12px serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('源', 16, 16);
+        }
+        
+        function downloadFavicon() {
+            drawBadge();
+            const link = document.createElement('a');
+            link.download = 'favicon.ico';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        function downloadPNG() {
+            drawBadge();
+            const link = document.createElement('a');
+            link.download = 'favicon-32x32.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        // Draw initial badge
+        drawBadge();
+    </script>
+</body>
+</html>
